@@ -1,14 +1,9 @@
 # Get an audio player IP address
 
-This project is a simple service, deployed with Claudia.JS, that tells you the IP address of an assistant. 
-You have to play a 250 ms item in with the audio player.
-It is based on the binary-content example of the Claudia.JS tutorials.
+This project is a simple lambda service, deployed with Claudia.JS. It tells you the IP address of an assistant. 
+You have to play a 250 ms item with the audio player. NOTE: It doesn't work in audio tags in SSML strings.
 
-
-* `/silence?id=<unique id>`: returns a short silent mp3. Use it in and SSML audio tag.
-The call is "tagged" with an "id" variable in the query string.
-
-* `/ip?id=<unique id>`: returns the IP address of the previous caller with the same id.
+The code is based on the binary-content example of the Claudia.JS tutorials.
 
 
 ## Try it out
@@ -22,7 +17,7 @@ in the example commands below. Also replace 'foo_bar' with a unique id.
  
  `https://<API-ID>.execute-api.us-east-1.amazonaws.com/latest/silence?id=foo_bar`
 
-* Then you can query the ip after the call with this GET (it returns the ip address as text)
+* Now you can query the ip after the call with this GET (it returns the ip address as text)
 
  `curl "https://<API-ID>.execute-api.us-east-1.amazonaws.com/latest/ip?id=foo_bar"`
 
