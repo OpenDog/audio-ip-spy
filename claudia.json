@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "binary-content-executor",
+    "name": "binary-content",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "hdp8i1tk38",
+    "module": "main"
+  }
+}
