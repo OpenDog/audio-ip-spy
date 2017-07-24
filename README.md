@@ -1,6 +1,6 @@
-# Get an audio player IP address
+# Find out the IP address of an Alexa device (with audio player) 
 
-This project is a simple lambda service, deployed with Claudia.JS. It tells you the IP address of an assistant. 
+This project is a simple lambda service, deployed with Claudia.JS. It tells you the IP address of an Alexa device. 
 You have to play a 250 ms item with the audio player. NOTE: It doesn't work in audio tags in SSML strings.
 
 The code is based on the binary-content example of the Claudia.JS tutorials.
